@@ -13,7 +13,7 @@ typedef struct HouseNode {
     struct HouseNode* next; // Punter al següent node
 } HouseNode;
 
-FILE* open_map_house();
+FILE* open_map_house(char* mapa);
 HouseNode* add_house(HouseNode* head, char* street, int number, double lat, double lon);
 void to_lowercase(char* original, char* dest);
 void expand_abbreviations(const char* original, char* dest);
